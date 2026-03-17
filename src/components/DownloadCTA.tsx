@@ -28,13 +28,13 @@ const DownloadCTA = () => {
               The App for <br />
               <span className="text-gradient-accent italic">Billion</span> dreams.
             </h2>
-            
+
             <p className="text-xl text-white/50 font-medium mb-12 leading-relaxed max-w-lg">
               Download the ScrizaPay app and transform your shop into a digital bank. Join 5L+ retailers today.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-6 mb-16">
-              <motion.a
+              {/* <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 href="https://play.google.com/store/apps/details?id=com.EzeePay_DigitalBharat"
@@ -44,8 +44,8 @@ const DownloadCTA = () => {
               >
                 <Download size={24} />
                 Download App
-              </motion.a>
-              
+              </motion.a> */}
+
               <div className="flex items-center gap-4 px-6 py-4 rounded-[2.5rem] bg-white/5 border border-white/10 backdrop-blur-sm">
                 <div className="w-10 h-10 rounded-full bg-accent flex items-center justify-center text-white">
                   <ShieldCheck size={20} />
@@ -80,7 +80,7 @@ const DownloadCTA = () => {
             <div className="relative z-10 transform hover:scale-[1.05] transition-transform duration-700">
               <img src={appMockup} alt="ScrizaPay App Mockup" className="w-full h-auto drop-shadow-[0_50px_100px_rgba(255,59,92,0.2)]" />
             </div>
-            
+
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-accent/20 rounded-full blur-[150px] -z-10" />
           </motion.div>
         </div>

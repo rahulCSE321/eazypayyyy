@@ -37,7 +37,7 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <a
+              {/* <a
                 href="https://play.google.com/store/apps/details?id=com.EzeePay_DigitalBharat"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -45,10 +45,10 @@ const HeroSection = () => {
               >
                 <Download size={18} />
                 Download App
-              </a>
+              </a> */}
               <a
                 href="#"
-                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl border border-primary-foreground/20 text-primary-foreground font-semibold hover:bg-primary-foreground/10 transition-all"
+                className="inline-flex items-center gap-2 px-7 py-3.5 rounded-xl bg-gradient-accent text-accent-foreground font-semibold shadow-accent hover:opacity-90 transition-all"
               >
                 Partner Login
                 <ArrowRight size={18} />

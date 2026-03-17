@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Sparkles, User } from "lucide-react";
+import { Menu, X, User } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 import logo from "@/assets/nscrizaa.svg";
@@ -73,19 +73,10 @@ const Navbar = () => {
         <div className="hidden lg:flex items-center gap-3">
           <a
             href="#"
-            className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-gray-700 hover:text-accent transition-all rounded-xl hover:bg-white/40 group"
-          >
-            <User size={16} className="group-hover:rotate-12 transition-transform" />
-            Partner Login
-          </a>
-          <a
-            href="https://play.google.com/store/apps/details?id=com.EzeePay_DigitalBharat"
-            target="_blank"
-            rel="noopener noreferrer"
             className="group relative inline-flex items-center gap-2 px-6 py-2.5 rounded-xl bg-gradient-accent text-accent-foreground text-sm font-bold shadow-accent hover:shadow-lg hover:scale-[1.02] active:scale-95 transition-all duration-300 overflow-hidden"
           >
-            <Sparkles size={14} className="relative z-10 animate-pulse" />
-            <span className="relative z-10">Download App</span>
+            <User size={16} className="relative z-10 group-hover:rotate-12 transition-transform" />
+            <span className="relative z-10">Partner Login</span>
             <div className="absolute inset-0 bg-gradient-to-r from-accent to-secondary opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </a>
         </div>
@@ -139,16 +130,10 @@ const Navbar = () => {
               <div className="flex flex-col gap-3 pt-4 mt-2 border-t border-gray-200/50">
                 <a
                   href="#"
-                  className="px-5 py-3 rounded-xl border border-gray-200 text-gray-700 text-sm font-bold text-center bg-white/30"
+                  className="px-5 py-3 rounded-xl bg-gradient-accent text-accent-foreground text-sm font-bold text-center shadow-accent flex items-center justify-center gap-2 group"
                 >
+                  <User size={16} className="group-hover:rotate-12 transition-transform" />
                   Partner Login
-                </a>
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.EzeePay_DigitalBharat"
-                  className="px-5 py-3 rounded-xl bg-gradient-accent text-accent-foreground text-sm font-bold text-center shadow-accent flex items-center justify-center gap-2"
-                >
-                  <Sparkles size={16} />
-                  Download App
                 </a>
               </div>
             </div>

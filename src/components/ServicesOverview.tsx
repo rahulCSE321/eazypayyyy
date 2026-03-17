@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { Landmark, Receipt, Plane, Smartphone, Shield, Building2, CheckCircle2, ArrowRight } from "lucide-react";
+import { Landmark, Receipt, Plane, Smartphone, Shield, Building2 } from "lucide-react";
 import servicesPremium from "@/assets/services-premium.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -130,21 +130,7 @@ const ServicesOverview = () => {
             {/* Background elements */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-accent/5 rounded-full blur-3xl -z-10" />
 
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              className="absolute -bottom-10 -left-10 p-8 glass-morphism rounded-[2.5rem] shadow-premium hidden md:block"
-            >
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-green-500 flex items-center justify-center text-white">
-                  <CheckCircle2 size={24} />
-                </div>
-                <div>
-                  <div className="text-2xl font-black text-gray-900 tracking-tight">5,00,000+</div>
-                  <div className="text-xs font-bold uppercase text-gray-400 tracking-widest">Active Retailers India-Wide</div>
-                </div>
-              </div>
-            </motion.div>
+
           </div>
 
         </div>
